@@ -13,6 +13,9 @@ public class LSolution {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
+
+            // if(mainChoice.isEmpty())
+            //     continue;    
             System.out.println("Plese Select an operation:");
             System.out.println("1. Add book to libary");
             System.out.println("2. Remove book in library");
@@ -20,9 +23,8 @@ public class LSolution {
             System.out.println("4. Add Students ");
             System.out.println("5. Take book from library for student");
             System.out.println("6. Retuern book from library for student");
-        
             String mainChoice = sc.nextLine();
-            // sc.close();
+
             switch (mainChoice) {
                 case "1":
                     System.out.println("Enter Book Name:");
@@ -33,6 +35,7 @@ public class LSolution {
                     double price = sc.nextDouble();
                     System.out.println("Enter qty:");
                     int qty = sc.nextInt();
+                    sc.nextLine();
                     l.addBook(bname, gener, price, qty);
                     break;
                 case "2":
@@ -40,6 +43,7 @@ public class LSolution {
                     int rmBookId = sc.nextInt();
                     System.out.println("Enter qty:");
                     qty = sc.nextInt();
+                    sc.nextLine();
                     l.rmBook(rmBookId, qty);
                     break;
                 case "3":
