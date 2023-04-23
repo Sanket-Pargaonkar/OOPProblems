@@ -1,0 +1,44 @@
+Problem Statement 1:
+A car rental agency wants to create a system to manage their car rentals. The system should
+allow customers to rent a car by selecting the type of car they want, the rental duration, and the
+pick-up and drop-off locations. The agency offers different types of cars, such as economy,
+midsize, and luxury, with different rental rates and availability.
+The car rental system should be able to do the following:
+	1. Display the available cars and their details (type, rental rate, and availability).
+	2. Allow customers to rent a car by selecting the type of car they want, the rental duration,
+	and the pick-up and drop-off locations.
+	3. Calculate the total rental cost based on the rental rate and duration.
+	4. Update the availability of cars after a rental is made.
+	5. Display the rented cars and their details (type, rental rate, rental duration, pick-up, and
+	drop-off locations).
+	6. Allow customers to return a rented car and update its availability.
+Object-oriented approach:
+To implement the above car rental system, we can use the following classes:
+	1. Car: This class will contain the details of each car, such as the type, rental rate, and
+	availability. It will also have methods to display the car details and update its availability.
+	2. Customer: This class will contain the details of each customer, such as the rental
+	duration, pick-up, and drop-off locations. It will also have methods to calculate the total
+	rental cost and display the rented car details.
+	3. CarRentalSystem: This class will act as the main controller of the system. It will contain
+	the list of available cars and rented cars and methods to display the available cars, rent
+	a car, return a car, and update the car availability.
+Using the above classes, we can create objects and use them to interact with the car rental
+system. For example, we can create a Car object for each car in the system, a Customer object
+for each customer, and a CarRentalSystem object to manage the overall system.
+Please consider following edge cases while creating the solution
+	1. What happens if a customer tries to rent a car that is not available?
+	2. What happens if a customer tries to return a car that was not rented from the rental
+	agency?
+	3. What happens if a customer wants to extend the rental duration of a car that they have
+	already rented?4. What happens if a customer wants to rent a car for a duration that is longer than the
+	maximum rental period allowed by the rental agency?
+	5. What happens if a customer wants to rent a car from a location that is not a valid pick-up
+	location according to the rental agency?
+	6. What happens if a customer wants to return a car to a location that is not a valid drop-off
+	location according to the rental agency?
+	7. What happens if a customer selects a car type that is not offered by the rental agency?
+	8. What happens if a customer tries to rent a car for a duration that is less than the
+	minimum rental period allowed by the rental agency?
+	9. What happens if the rental agency needs to perform maintenance on a car and it
+	becomes unavailable for a period of time?
+	10. What happens if a customer tries to rent a car but does not have a valid driver's license?
