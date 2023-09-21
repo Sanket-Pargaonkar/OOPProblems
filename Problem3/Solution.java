@@ -1,7 +1,5 @@
 import java.util.*;
 
-import javax.swing.text.Style;
-
 public class Solution {
     public static void main(String[] arge) {
         ArrayList<Car> cars = new ArrayList<Car>();
